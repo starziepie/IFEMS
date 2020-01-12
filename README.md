@@ -14,4 +14,4 @@ An Infinite Flight Event Management System
 * MySQL and MySQLi PHP Extension
 
 ## This Branch
-Contained in this branch is the **standard** version of IFEMS. Do not download directly from this branch, it is likely unstable. Instead, use the releases page and select the standard version.
+Contained in this branch is the **flyout** version of IFEMS. Do not download directly from this branch, it is likely unstable. Instead, use the releases page and select the flyout version.
