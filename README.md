@@ -1,6 +1,8 @@
 # IFEMS
 An Infinite Flight Event Management System
+
 ---
+
 ## Installation
 1. Go to the releases and download your desired version. Standard is for single route events (ie all pilots fly the same route from one airport to another) and flyout is, well, for flyouts. I am not able to make custom versions at this time.
 2. Create a MySQL Database called `ems` from your cPanel
