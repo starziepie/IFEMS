@@ -12,7 +12,7 @@
         global $server, $username, $password, $dbname;
 
         // Create connection
-        $conn = new mysqli($server, $username, $password, $dbname, 3308);
+        $conn = new mysqli($server, $username, $password, $dbname);
 
         // Check connection
         if ($conn->connect_error) {
@@ -37,7 +37,7 @@
         global $server, $username, $password, $dbname;
 
         // Create connection
-        $conn = new mysqli($server, $username, $password, $dbname, 3308);
+        $conn = new mysqli($server, $username, $password, $dbname);
 
         // Check connection
         if ($conn->connect_error) {
@@ -56,7 +56,7 @@
     function selectMultiple($selSql) {
         global $server, $username, $password, $dbname;
         // Create connection
-        $conn = new mysqli($server, $username, $password, $dbname, 3308);
+        $conn = new mysqli($server, $username, $password, $dbname);
 
         // Check connection
         if ($conn->connect_error) {
