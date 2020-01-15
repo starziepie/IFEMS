@@ -107,7 +107,8 @@
                 echo file_get_contents('../footer.html');
                 die();
             } else {
-                echo '<p class="text-success">Signup Successful! On behalf of the IFMEB Team, thank you for coming!</p>';
+                $name = getConfig()["name"]l
+                echo '<p class="text-success">Signup Successful! On behalf of the '.$name.' Team, thank you for coming!</p>';
             }
         } else {
             $ret = selectMultiple('SELECT * FROM slots WHERE booked=0;');
