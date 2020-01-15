@@ -13,7 +13,7 @@
                 echo file_get_contents('../footer.html');
                 die();
             }
-            $que = 'UPDATE slots SET booked=1, pilot='.$pilotdata["id"].' WHERE id='.$_GET["slotid"].';';
+            $que = 'UPDATE slots SET booked=1, pilot='.$pilotdata["id"].' WHERE id='.$_GET["slotid"].' AND booked=0;';
             $ret1 = runQ($que);
             if ($ret1 != TRUE) {
                 echo '<p class="text-danger">Booking Error: SQL Query Failed - '.$ret1.'</p>';
