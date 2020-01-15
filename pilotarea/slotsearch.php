@@ -100,7 +100,7 @@
                 echo file_get_contents('../footer.html');
                 die();
             }
-            $que = 'UPDATE slots SET booked=1, pilot='.$pilotdata["id"].' WHERE id='.$_GET["slotid"].';';
+            $que = 'UPDATE slots SET booked=1, pilot='.$pilotdata["id"].' WHERE id='.$_GET["slotid"].' AND booked=0;';
             $ret1 = runQ($que);
             if ($ret1 != TRUE) {
                 echo '<p class="text-danger">Booking Error: SQL Query Failed - '.$ret1.'</p>';
@@ -118,7 +118,7 @@
             }
             echo '<table class="table-striped" width="100%"><thead><tr><th>Arrival</th><th>Airline</th><th>Aircraft</th><th>Slot</th><th>Book Slot</th></tr></thead><tbody id="tablebody">';
             while ($item = $ret->fetch_assoc()) {
-                echo '<tr><td>'.$item["arr"].'</td><td>'.$item["airline"].'</td><td>'.$item["aircraft"].'</td><td>'.$item["dep_slot"].'</td><td><a class="btn btn-primary" href="?action=bookslot&slotid='.$item["id"].'">Book Slot</a></td></tr>';
+                echo '<tr><td>'.$item["arr"].'</td><td>'.$item["airline"].'</td><td>'.$item["aircraft"].'</td><td>'.$item["dep_slot"].'</td><td><a href="?action=bookslot&slotid='.$item["id"].'" class="btn btn-primary">Book Slot</a></td></tr>';
             }
         }
     ?>
