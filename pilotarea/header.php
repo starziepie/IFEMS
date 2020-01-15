@@ -27,6 +27,8 @@
                   if ($bookedslot === FALSE) {
                     ?>
                     <a class="nav-link text-white" href="slotsearch.php">Search Slots</a>
+                  <?php } else { ?>
+                    <a class="nav-link text-white" href="briefing.php">Event Briefing</a>
                   <?php } ?>
             </li>
             <li class="nav-item">
