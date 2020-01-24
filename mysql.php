@@ -1,5 +1,5 @@
 <?php
-    // IMPORTANT: PUT YOUR CREDS HERE IN BETWEEN THE QUOTES ON EACH ITEM
+    // IMPORTANT: PUT YOUR CREDENTIALS HERE IN BETWEEN THE QUOTES ON EACH ITEM
     $server = 'localhost';
     $username = 'root';
     $password = '';

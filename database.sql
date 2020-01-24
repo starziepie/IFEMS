@@ -15,7 +15,6 @@ CREATE TABLE IF NOT EXISTS `pilots` (
   `ifcname` text NOT NULL,
   `email` text NOT NULL,
   `pass` text NOT NULL,
-  `atc` int(11) NOT NULL DEFAULT '0',
   `admin` int(1) NOT NULL DEFAULT '0',
   PRIMARY KEY (`id`)
 ) ENGINE=MyISAM AUTO_INCREMENT=1 DEFAULT CHARSET=latin1;
